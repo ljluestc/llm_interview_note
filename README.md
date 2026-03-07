@@ -8,15 +8,14 @@
 为了在低资源情况下，学习大模型，进行动手实践，创建 [tiny-llm-zh](https://github.com/wdndev/tiny-llm-zh)仓库，旨在构建一个小参数量的中文大语言模型，该项目已部署，可以在如下网站上体验：[ModeScope Tiny LLM](https://www.modelscope.cn/studios/wdndev/tiny_llm_92m_demo/summary)。
 
 动手实践项目：
-- [tiny-llm-zh](https://github.com/wdndev/tiny-llm-zh) : 从零实现 llama3, 可加载 meta 官方权重，可在本地笔记本（16G内存）调试运行
+- [tiny-llm-zh](https://github.com/wdndev/tiny-llm-zh) : 从零实现一个小参数量的中文大语言模型，快速掌握大模型预训练、微调、RL等相关技术；
 - [tiny-rag](https://github.com/wdndev/tiny-rag) : 实现一个简单的RAG系统，支持多路召回、重排等功能，快速了解搜索相关内容；
 - [tiny-mcp](https://github.com/wdndev/tiny-mcp) : 使用 Prompt 和 Function Calling 实现 MCP （模型上下文协议）服务端和客户端，快速使用MCP搭建Agent项目。
+- [llama3-from-scratch-zh](https://github.com/wdndev/llama3-from-scratch-zh) : 从零实现 llama3, 可加载 meta 官方权重，可在本地笔记本（16G内存）调试运行
 
 
 其他学习资源推荐：
 
-- [llama3-from-scratch-zh](https://github.com/wdndev/llama3-from-scratch-zh) : 从零实现 llama3, 可加载 meta 官方权重，可在本地笔记本（16G内存）调试运行
-- [tiny-rag](https://github.com/wdndev/tiny-rag) : 实现一个简单的RAG系统，支持多路召回、重排等功能，快速了解搜索相关内容；
 - [AI 工程师八股](https://github.com/wdndev/ai_interview_note) : 包含深度学习、机器学习、推荐系统、搜索系统等通用知识
 
 
