@@ -17,13 +17,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 _SCRIPT_DIR = Path(__file__).resolve().parent
+_PROJECT_ROOT = _SCRIPT_DIR.parent
 DEVOPS_DATA = os.environ.get(
     "DEVOPS_DATA_DIR",
-    str(_SCRIPT_DIR.parent.parent / "devops-interview-questions" / "data"),
+    str(_PROJECT_ROOT.parent / "devops-interview-questions" / "data"),
 )
-RAG_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "processed")
-DOCS_FILE = os.path.join(RAG_DIR, "all_documents.jsonl")
-QA_FILE = os.path.join(RAG_DIR, "all_qa_pairs.jsonl")
+RAG_DIR = _PROJECT_ROOT / "data" / "processed"
+DOCS_FILE = str(RAG_DIR / "all_documents.jsonl")
+QA_FILE = str(RAG_DIR / "all_qa_pairs.jsonl")
 NOW = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%f")
 SOURCE_REPO = "https://github.com/aliaskov/devops-interview-questions"
 
