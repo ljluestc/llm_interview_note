@@ -1,5 +1,6 @@
 # LLMs 相关知识及面试题
 
+> Fork of [wdndev/llm_interview_note](https://github.com/wdndev/llm_interview_note). RAG-ready: ingest via [ljluestc/RAG](https://github.com/ljluestc/RAG) `ingest_llm_interview`.
 
 ## 简介
 
@@ -10,7 +11,7 @@
 动手实践项目：
 - [tiny-llm-zh](https://github.com/wdndev/tiny-llm-zh) : 从零实现一个小参数量的中文大语言模型，快速掌握大模型预训练、微调、RL等相关技术；
 - [tiny-rag](https://github.com/wdndev/tiny-rag) : 实现一个简单的RAG系统，支持多路召回、重排等功能，快速了解搜索相关内容；
-- [tiny-mcp](https://github.com/wdndev/tiny-mcp) : 使用 Prompt 和 Function Calling 实现 MCP （模型上下文协议）服务端和客户端，快速使用MCP搭建Agent项目。
+- [tiny-mcp](https://github.com/wdndev/tiny-mcp) / [ljluestc/tiny-mcp](https://github.com/ljluestc/tiny-mcp) : 使用 Prompt 和 Function Calling 实现 MCP （模型上下文协议）服务端和客户端，快速使用MCP搭建Agent项目。
 - [llama3-from-scratch-zh](https://github.com/wdndev/llama3-from-scratch-zh) : 从零实现 llama3, 可加载 meta 官方权重，可在本地笔记本（16G内存）调试运行
 
 
