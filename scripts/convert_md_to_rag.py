@@ -199,7 +199,7 @@ class MarkdownToRAGConverter:
             "url": url,
             "last_updated": datetime.now().isoformat(),
             "metadata": {
-                "word_count": len(content),
+                "word_count": len(content.split()),
                 "has_code": len(code_blocks) > 0,
                 "has_images": '[IMAGE]' in clean_content,
                 "references": []

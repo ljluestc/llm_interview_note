@@ -14,8 +14,13 @@ Sources:
 import json
 import os
 from datetime import datetime, timezone
+from pathlib import Path
 
-DEVOPS_DATA = "/home/calelin/dev/devops-interview-questions/data"
+_SCRIPT_DIR = Path(__file__).resolve().parent
+DEVOPS_DATA = os.environ.get(
+    "DEVOPS_DATA_DIR",
+    str(_SCRIPT_DIR.parent.parent / "devops-interview-questions" / "data"),
+)
 RAG_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "processed")
 DOCS_FILE = os.path.join(RAG_DIR, "all_documents.jsonl")
 QA_FILE = os.path.join(RAG_DIR, "all_qa_pairs.jsonl")
